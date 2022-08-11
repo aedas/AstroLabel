@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>AstroLabel</name>
+	<comment></comment>
+	<projects>
+		<project>CSVReader</project>
+		<project>Sort</project>
+		<project>Filter</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>CSVReader</name>
+			<type>2</type>
+			<location>C:/Projects/Private/C++ Projects/CSVReader</location>
+		</link>
+		<link>
+			<name>Filter</name>
+			<type>2</type>
+			<location>C:/Projects/Private/C++ Projects/Filter</location>
+		</link>
+		<link>
+			<name>Sort</name>
+			<type>2</type>
+			<location>C:/Projects/Private/C++ Projects/Sort</location>
+		</link>
+		<link>
+			<name>eigen-3.4.0</name>
+			<type>2</type>
+			<location>C:/Projects/Libraries/C++/eigen-3.4.0</location>
+		</link>
+	</linkedResources>
+</projectDescription>
