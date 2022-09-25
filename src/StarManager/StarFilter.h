@@ -18,7 +18,7 @@ public:
 	std::vector<Star> filter(std::vector<Star> stars, double maxMag);
 	static double getMaxMag();
 private:
-	static double maxMag;
+	static double sMaxMag;
 	static bool magFilter(Star star);
 };
 

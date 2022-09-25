@@ -8,13 +8,24 @@
 
 #include <iostream>
 #include <Eigen/Eigen>
-#include "ImageReader/ImageReader.h"
+#include "ImageManager/ImageManager.h"
 #include "StarManager/StarManager.h"
-
-int comparer(int x, int y);
+#include <PNGReader.h>
+#include <PNGWriter.h>
+#include <PNGPNG.h>
 
 int main() {
-	StarManager manager = StarManager();
-	manager.displayStars(1);
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+	//StarManager star = StarManager();
+	//star.init();
+	ImageManager img = ImageManager();
+	img.init();
+	img.read("./src/ImageManager/Dippers.png");
+	img.copy(0);
+	img.darken(0);
+	img.write("./test.png", 0);
+	img.write("./testcopy.png", 1);
+	img.freeAll();
 	return 0;
 }

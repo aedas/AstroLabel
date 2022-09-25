@@ -9,43 +9,43 @@
 
 Star::Star(std::vector<std::string> data) {
 	// TODO Auto-generated constructor stub
-	id = stois(data, 0);
-	hip = stois(data, 1);
-	hd = stois(data, 2);
-	hr = stois(data, 3);
-	gl = stoss(data, 4);
-	bf = stoss(data, 5);
-	proper = stoss(data, 6);
-	ra = stods(data, 7);
-	dec = stods(data, 8);
-	dist = stods(data, 9);
-	pmra = stods(data, 10);
-	pmdec = stods(data, 11);
-	rv = stods(data, 12);
-	mag = stods(data, 13);
-	absmag = stods(data, 14);
-	spect = stoss(data, 15);
-	ci = stods(data, 16);
-	x = stods(data, 17);
-	y = stods(data, 18);
-	z = stods(data, 19);
-	vx = stods(data, 20);
-	vy = stods(data, 21);
-	vz = stods(data, 22);
-	rarad = stods(data, 23);
-	decrad = stods(data, 24);
-	pmrarad = stods(data, 25);
-	pmdecrad = stods(data, 26);
-	bayer = stoss(data, 27);
-	flam = stois(data, 28);
-	con = stoss(data, 29);
-	comp = stois(data, 30);
-	comp_primary = stois(data, 31);
-	base = stoss(data, 32);
-	lum = stois(data, 33);
-	var = stoss(data, 34);
-	var_min = stods(data, 35);
-	var_max = stods(data, 36);
+	mId = stois(data, 0);
+	mHip = stois(data, 1);
+	mHd = stois(data, 2);
+	mHr = stois(data, 3);
+	mGl = stoss(data, 4);
+	mBf = stoss(data, 5);
+	mProper = stoss(data, 6);
+	mRa = stods(data, 7);
+	mDec = stods(data, 8);
+	mDist = stods(data, 9);
+	mPmra = stods(data, 10);
+	mPmdec = stods(data, 11);
+	mRv = stods(data, 12);
+	mMag = stods(data, 13);
+	mAbsmag = stods(data, 14);
+	mSpect = stoss(data, 15);
+	mCi = stods(data, 16);
+	mX = stods(data, 17);
+	mY = stods(data, 18);
+	mZ = stods(data, 19);
+	mVx = stods(data, 20);
+	mVy = stods(data, 21);
+	mVz = stods(data, 22);
+	mRarad = stods(data, 23);
+	mDecrad = stods(data, 24);
+	mPmrarad = stods(data, 25);
+	mPmdecrad = stods(data, 26);
+	mBayer = stoss(data, 27);
+	mFlam = stois(data, 28);
+	mCon = stoss(data, 29);
+	mComp = stois(data, 30);
+	mComp_primary = stois(data, 31);
+	mBase = stoss(data, 32);
+	mLum = stois(data, 33);
+	mVar = stoss(data, 34);
+	mVar_min = stods(data, 35);
+	mVar_max = stods(data, 36);
 }
 
 
@@ -54,11 +54,11 @@ Star::~Star() {
 }
 
 std::string Star::repr() {
-	return std::to_string(id) + ", " + proper + ", " + bayer + " " + std::to_string(flam) + ", " + con + ", " + std::to_string(mag);
+	return std::to_string(mId) + ", " + mProper + ", " + mBayer + " " + std::to_string(mFlam) + ", " + mCon + ", " + std::to_string(mMag);
 }
 
 double Star::getMag() {
-	return mag;
+	return mMag;
 }
 
 int Star::stois(std::vector<std::string> data, int pos) {

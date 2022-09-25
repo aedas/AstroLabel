@@ -8,7 +8,7 @@
 
 #include "StarFilter.h"
 
-double StarFilter::maxMag = 0;
+double StarFilter::sMaxMag = 0;
 
 
 StarFilter::StarFilter() {
@@ -20,13 +20,13 @@ StarFilter::~StarFilter() {
 }
 
 std::vector<Star> StarFilter::filter(std::vector<Star> stars, double maxMag) {
-	StarFilter::maxMag = maxMag;
+	sMaxMag = maxMag;
 	Filter<Star> filter = Filter<Star>();
 	return filter.filter(stars, magFilter);
 }
 
 double StarFilter::getMaxMag() {
-	return maxMag;
+	return sMaxMag;
 }
 
 bool StarFilter::magFilter(Star star) {
