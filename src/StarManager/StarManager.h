@@ -18,6 +18,7 @@ class StarManager {
 public:
 	StarManager();
 	virtual ~StarManager();
+	int init();
 	int displayStars(double maxMag);
 private:
 	StarReader reader;

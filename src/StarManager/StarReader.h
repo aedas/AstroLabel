@@ -20,8 +20,9 @@ public:
 	std::vector<Star> getStars();
 	int read();
 private:
-	std::vector<std::string> header;
-	std::vector<Star> stars;
+	std::vector<std::string> mHeader;
+	std::vector<Star> mStars;
+	std::string getProjPath();
 };
 
 #endif /* STARREADER_STARREADER_H_ */

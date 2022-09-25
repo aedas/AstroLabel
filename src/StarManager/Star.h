@@ -17,9 +17,9 @@ public:
 	std::string repr();
 	double getMag();
 private:
-	int id, hip, hd, hr, flam, comp, comp_primary;
-	std::string gl, bf, proper, spect, bayer, con, base, var;
-	double ra, dec, dist, pmra, pmdec, rv, mag, absmag, ci, x, y, z, vx, vy, vz, rarad, decrad, pmrarad, pmdecrad, lum, var_min, var_max;
+	int mId, mHip, mHd, mHr, mFlam, mComp, mComp_primary;
+	std::string mGl, mBf, mProper, mSpect, mBayer, mCon, mBase, mVar;
+	double mRa, mDec, mDist, mPmra, mPmdec, mRv, mMag, mAbsmag, mCi, mX, mY, mZ, mVx, mVy, mVz, mRarad, mDecrad, mPmrarad, mPmdecrad, mLum, mVar_min, mVar_max;
 	int stois(std::vector<std::string> data, int pos);
 	double stods(std::vector<std::string> data, int pos);
 	std::string stoss(std::vector<std::string> data, int pos);
